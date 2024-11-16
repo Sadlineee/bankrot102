@@ -11,6 +11,7 @@ export const HeaderBox = styled.header`
 
   @media ${({ theme }) => theme.media.small} {
     padding: 0 1rem;
+    height: 7rem;
   }
 `
 
@@ -25,6 +26,11 @@ export const SocialMedia = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  font-size: 1.75rem;
+
+  @media ${({ theme }) => theme.media.small} {
+    font-size: 2rem;
+  }
 `
 
 export const PhoneNumber = styled.span`
@@ -39,21 +45,17 @@ export const PhoneNumber = styled.span`
 `
 
 export const TelegramLink = styled(FaTelegram)`
-  font-size: 1.75rem;
   color: #47A6FF;
 `
 
 export const InstagramLink = styled(FaInstagram)`
-  font-size: 1.75rem;
   color: #FF3985;
 `
 
 export const WhatsappLink = styled(FaWhatsapp)`
-  font-size: 1.75rem;
   color: #32FF8E;
 `
 
-export const VkLink = styled(FaVk)`
-  font-size: 1.75rem;
+export const VkLink = styled(FaVk)` 
   color: #3cA1FF;
 `

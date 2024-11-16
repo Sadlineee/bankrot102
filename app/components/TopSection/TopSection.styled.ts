@@ -5,6 +5,10 @@ export const TopSectionBox = styled.article`
   flex-direction: row;
   align-items: center;
   margin: 4rem 0;
+
+  @media ${({ theme }) => theme.media.small} {
+    margin: 5rem 0;
+  }
 `
 
 export const TextBox = styled.div`
@@ -61,5 +65,7 @@ export const Shape = styled.div`
 
   @media ${({ theme }) => theme.media.small} {
     aspect-ratio: 1;
+    margin-left: -75%;
+    width: 75%;
   }
 `
