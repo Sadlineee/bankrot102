@@ -1,5 +1,12 @@
 import styled from 'styled-components'
 
+export const CrewTitle = styled.span`
+  margin-bottom: 5rem;
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.white};
+`
+
 export const CrewBox = styled.article`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
